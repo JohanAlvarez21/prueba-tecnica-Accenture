@@ -45,20 +45,20 @@ public class ShoppingApplication {
 //		return initializer;
 //	}
 
-	@Bean
-	public ApplicationRunner initializer(ConnectionFactory connectionFactory){
-
-		return args -> {
-			InputStream inputStream = getClass().getClassLoader().getResourceAsStream("schema.sql");
-			String schema = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
-			DatabaseClient client = DatabaseClient.create(connectionFactory);
-
-			Arrays.stream(schema.split(";"))
-					.map(String::trim)
-					.filter(s -> !s.isBlank())
-					.forEach(sql ->
-						client.sql(sql).then().subscribe());
-		};
-	}
+//	@Bean
+//	public ApplicationRunner initializer(ConnectionFactory connectionFactory){
+//
+//		return args -> {
+//			InputStream inputStream = getClass().getClassLoader().getResourceAsStream("schema.sql");
+//			String schema = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
+//			DatabaseClient client = DatabaseClient.create(connectionFactory);
+//
+//			Arrays.stream(schema.split(";"))
+//					.map(String::trim)
+//					.filter(s -> !s.isBlank())
+//					.forEach(sql ->
+//						client.sql(sql).then().subscribe());
+//		};
+//	}
 
 }
