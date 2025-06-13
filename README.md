@@ -239,3 +239,10 @@ Instalación Ide IntelliJ IDEA
       Resultado
   ![image](https://github.com/user-attachments/assets/464efc82-3613-40f5-85f9-da1fe0090b5b)
 
+## Ejecución de pruebas
+
+  Dentro de la ruta shopping/src/test se encuentran los test para cada controllador
+  
+  ![image](https://github.com/user-attachments/assets/9b6657ed-c77b-4f36-96bc-a86db2575fc3)
+
+
