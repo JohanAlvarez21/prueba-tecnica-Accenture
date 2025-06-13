@@ -39,9 +39,12 @@ Instalación Ide IntelliJ IDEA
     
   ![image](https://github.com/user-attachments/assets/82bfb18f-9580-45bd-84d0-e9e39bf23daf)
 
-## Ejecutar proyecto
+## Ejecutar proyecto en local
 
-  Abrimos una terminal dentro de la ruta del proyecto y ejecutamos:
+  - Dentro de la opción Maven en IntelliJ darle click en clean y después en package
+![image](https://github.com/user-attachments/assets/fc9eeed2-75ff-43a5-8fd7-cbf6c4e91ef5)
+
+  - Abrimos una terminal dentro de la ruta del proyecto y ejecutamos:
   
   docker-compose build
   
@@ -52,22 +55,29 @@ Instalación Ide IntelliJ IDEA
 ![image](https://github.com/user-attachments/assets/ca25064b-2716-48e5-bb31-ae2fa2e3fd4f)
 
 
-  
-
-
 ## Ejemplos uso de la API:
 
 ### Endpoint para el API de franquicias
 
   -Obtener todas las franquicias: Este endpoint devolverá una lista con todas las franquicias
+  
+  Local:
     -http://localhost:8080/franquicias/listarFranquicias
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/franquicias/listarFranquicias
     
     Resultado
   ![image](https://github.com/user-attachments/assets/4a00943e-8319-406f-80d6-5979cda66915)
 
   
   -Crear una franquicia: Este endpoint recibirá un json body con el nombre de la franquicia
+
+  Local:
     -http://localhost:8080/franquicias/agregarFranquicia
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/franquicias/agregarFranquicia
 
     Body
       {
@@ -79,7 +89,12 @@ Instalación Ide IntelliJ IDEA
 
 
   -Actualizar nombre a una franquicia: Este endpoint recibirá cómo parámetro el id de la franquicia y un json body con el nuevo nombre
+
+  Local:
     -http://localhost:8080/franquicias/actualizarNombreFranquicia/{idFranquicia}
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/franquicias/actualizarNombreFranquicia/{idFranquicia}
 
     Body
       {
@@ -93,14 +108,23 @@ Instalación Ide IntelliJ IDEA
 ### Endpoint para el API de sucursales
 
   -Obtener todas las sucursales: Este endpoint devolverá una lista con todas las sucursales
+
+  Local:
     -http://localhost:8080/sucursales/listarSucursales
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/sucursales/listarSucursales
     
     Resultado
   ![image](https://github.com/user-attachments/assets/90c4e900-f262-44dc-82d2-3e4e075ecb89)
 
-  
   -Crear una sucursal: Este endpoint recibirá un json body con el nombre de la sucursal y el id de la franquicia a la que se quiere relacionar
+
+  Local:
     -http://localhost:8080/sucursales/agregarSucursal
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/sucursales/agregarSucursal
 
     Body
       {
@@ -111,9 +135,13 @@ Instalación Ide IntelliJ IDEA
     Resultado
   ![image](https://github.com/user-attachments/assets/24619f30-0384-4387-afe3-071c145032b0)
 
-
   -Actualizar nombre a una sucursal: Este endpoint recibirá cómo parámetro el id de la sucursal y un json body con el nuevo nombre
+  
+  Local:
     -http://localhost:8080/sucursales/actualizarNombreSucursal/{idSucursal}
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/sucursales/actualizarNombreSucursal/{idSucursal}
 
     Body
       {
@@ -123,19 +151,26 @@ Instalación Ide IntelliJ IDEA
     Resultado
   ![image](https://github.com/user-attachments/assets/6e7f9b86-dbb6-45d9-bd1d-3deaabbfa29f)
 
-
-
 ### Endpoint para el API de productos
 
   -Obtener todos los productos: Este endpoint devolverá una lista con todos los productos
+
+  Local:
     -http://localhost:8080/productos/listarProdcutos
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/productos/listarProdcutos
     
     Resultado
   ![image](https://github.com/user-attachments/assets/2792a23d-9116-490c-b045-7addcfac8bd9)
 
-  
   -Crear un producto: Este endpoint recibirá un json body con el nombre del producto y el id de la sucursal a la que se quiere relacionar
+  
+  Local:
     -http://localhost:8080/productos/agregarProducto
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/productos/agregarProducto
 
     Body
       {
@@ -147,9 +182,13 @@ Instalación Ide IntelliJ IDEA
     Resultado
   ![image](https://github.com/user-attachments/assets/24c24c95-28ea-42a1-9efc-6eaa36e0e9b6)
 
-
   -Actualizar nombre a un producto: Este endpoint recibirá cómo parámetro el id del producto y un json body con el nuevo nombre
+  
+  Local:
     -http://localhost:8080/productos/actualizarNombreProducto/{idProducto}
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/productos/actualizarNombreProducto/{idProducto}
 
     Body
       {
@@ -161,7 +200,12 @@ Instalación Ide IntelliJ IDEA
 
 
   -Actualizar cantidad de stock a un producto: Este endpoint recibirá cómo parámetro el id del producto y un json body con la nueva cantidad
+  
+  Local:
       -http://localhost:8080/productos/actualizarStockProducto/{idProducto}
+
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/productos/actualizarStockProducto/{idProducto}
   
       Body
         {
@@ -173,14 +217,24 @@ Instalación Ide IntelliJ IDEA
 
   
   -Eliminar un producto de una sucursal: Este endpoint recibirá cómo parámetros el id del producto y el id de la sucursal
+  
+  Local:
       -http://localhost:8080/productos/eliminarProductoDeSucursal/{idProducto}/sucursal/{idSucursal}
+  
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/productos/eliminarProductoDeSucursal/{idProducto}/sucursal/{idSucursal}
     
       Resultado
   ![image](https://github.com/user-attachments/assets/2896a562-f007-434c-a312-bb8a395d32f4)
 
   
   -Obtener producto con más stock por franquicia: Este endpoint recibirá cómo parámetro el id de la franquicia
+
+  Local:
       -http://localhost:8080/productos/obtenerProductosMaxStockPorFranquicia/{idFranquicia}
+  
+  En la nube:
+    -http://ec2-3-145-81-130.us-east-2.compute.amazonaws.com:8080/productos/obtenerProductosMaxStockPorFranquicia/{idFranquicia}
   
       Resultado
   ![image](https://github.com/user-attachments/assets/464efc82-3613-40f5-85f9-da1fe0090b5b)
