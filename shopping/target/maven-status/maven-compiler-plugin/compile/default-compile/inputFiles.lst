@@ -1,0 +1,17 @@
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\controller\FranquiciaController.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\controller\ProductoController.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\controller\SucursalController.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\dto\FranquiciaDto.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\dto\ProductoDto.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\dto\ProductoMaxStockPorSucursalDto.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\dto\SucursalDto.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\model\Franquicia.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\model\Producto.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\model\Sucursal.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\repository\FranquiciaRepository.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\repository\ProductoRepository.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\repository\SucursalRepository.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\service\FranquiciaService.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\service\ProductoService.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\service\SucursalService.java
+C:\Users\johan\Downloads\shopping\src\main\java\com\app\shopping\ShoppingApplication.java

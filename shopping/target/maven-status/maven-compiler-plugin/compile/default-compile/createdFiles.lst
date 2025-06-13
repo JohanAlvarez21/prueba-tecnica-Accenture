@@ -1,0 +1,17 @@
+com\app\shopping\dto\ProductoMaxStockPorSucursalDto.class
+com\app\shopping\dto\FranquiciaDto.class
+com\app\shopping\controller\FranquiciaController.class
+com\app\shopping\controller\ProductoController.class
+com\app\shopping\repository\ProductoRepository.class
+com\app\shopping\ShoppingApplication.class
+com\app\shopping\repository\FranquiciaRepository.class
+com\app\shopping\service\FranquiciaService.class
+com\app\shopping\dto\SucursalDto.class
+com\app\shopping\controller\SucursalController.class
+com\app\shopping\dto\ProductoDto.class
+com\app\shopping\model\Producto.class
+com\app\shopping\model\Sucursal.class
+com\app\shopping\repository\SucursalRepository.class
+com\app\shopping\service\SucursalService.class
+com\app\shopping\service\ProductoService.class
+com\app\shopping\model\Franquicia.class
